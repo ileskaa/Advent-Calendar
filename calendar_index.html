@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize_v8.0.1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://d3js.org/d3.v6.js"></script>
+  <script src="app.js" defer></script>
+  <title>Calendrier de l'avent</title>
+</head>
+
+<body>
+  <header>
+    <h1 class ="header">Moins bon qu'avec du chocolat, mais l'intention est là ❤️</h1>
+    <div class="header" id="date"></div>
+  </header>
+
+  <div id="wrapper" style="position: relative"> <!--here we need to set position relative so that the next div can be set relative to this one-->
+    <img src="img/moon-31665.svg" id="img1" alt="Nuit étoilée">
+    <img src="img/moon-2.svg" id="img2" alt="Nuit étoilée">
+<!--     <div style="position: absolute; top: 5px; bottom: 10px; left: 2px; right: 5px">
+      <svg id="boxes" width="100%" height="100%" viewBox="0 0 1052.7181 743.1156"></svg>
+    </div> -->
+  </div>
+
+  <div class="modal" id="too-soon">
+    <div class="modal-header">
+      <div class="title"></div>
+      <button data-close-button class="close-button">&times;</button> <!-- we have both a data attribute and a class attribute -->
+    </div>
+    <div class="modal-body">
+      Il va falloir patienter encore un peu !<br><br>
+      En attendant, tu peux suivre l'exemple de Luffy et te goinfrer de plein de bonnes choses.
+      <img src="img/luffy-chopper.png" alt="Luffy and Chopper" id="luffy">
+    </div>
+  </div>
+
+  <div class="modal" id="modal1">
+    <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut qui dicta quaerat, explicabo ad animi, sequi voluptatem architecto fugiat repellat commodi eius, consequuntur quidem laborum aliquam illum quasi earum magnam mollitia corporis perferendis id? Dicta dolores expedita mollitia quaerat, perspiciatis sint tempora ut qui consectetur dolorem officiis recusandae molestiae aut est. Ducimus accusamus perferendis quos atque, ratione magnam? Nemo similique consequuntur optio dignissimos, culpa dicta amet quos porro cum unde ipsa exercitationem! Nulla illum ab similique, non deleniti laudantium hic iste qui facilis a corrupti accusamus error esse molestiae dignissimos perferendis magnam impedit eos dolore in, labore quia quidem. Atque repellendus repudiandae, perspiciatis dignissimos minus pariatur corrupti iusto animi dolorum dicta, delectus quae. Nam eius cum libero alias, dicta placeat commodi aliquid tempora vitae nulla veniam enim blanditiis sed nihil veritatis iusto nisi mollitia ipsa! Adipisci, aliquid. Facilis magnam nostrum culpa temporibus exercitationem, repudiandae voluptatum ducimus magni sit excepturi, ab provident veniam voluptate? Eveniet repellat aliquam molestias dolor magnam nulla ullam impedit libero pariatur sequi quam, ipsam quibusdam repellendus recusandae esse. Magnam aliquam cumque cupiditate delectus. Placeat excepturi repellat harum modi suscipit rem eligendi reprehenderit, distinctio unde vel architecto cum, sit quod cumque corporis quasi aliquid ipsum odio sapiente saepe incidunt enim illum. Exercitationem repudiandae non, eaque distinctio iure quo animi eligendi esse obcaecati, vitae rem similique libero voluptatum minima! Quae, optio. Ullam consectetur eum numquam, perferendis mollitia odit distinctio! Quia, numquam deleniti optio nihil fuga tenetur harum est. Atque, quod vitae facere, quibusdam sequi at numquam autem ducimus, eum odio tenetur eligendi iure illo. Iusto perferendis ex corporis optio. Nesciunt, ducimus perspiciatis! Exercitationem, soluta voluptatem harum autem ducimus suscipit iusto dicta saepe hic obcaecati porro cum. Expedita harum, obcaecati quidem sint iusto ipsa ullam ad voluptatem praesentium earum rerum esse incidunt tenetur qui aliquid ea doloremque, similique ratione modi sequi? Dolore praesentium, explicabo aperiam harum, dolorum nemo repellat expedita ab dolorem atque itaque quaerat ut saepe assumenda quidem esse eligendi laboriosam blanditiis dicta doloribus. Itaque saepe repellendus quisquam id sed quae nesciunt! Impedit possimus aliquam, illo veritatis dolores dicta ullam saepe non tempore placeat consectetur praesentium recusandae soluta quae eum consequatur maxime laudantium sequi veniam aperiam magni! Quo, vero eius architecto voluptates expedita unde dolor quos laudantium deserunt. Quod quis expedita nam excepturi, laborum commodi inventore debitis beatae voluptate soluta saepe fugiat odio veritatis ad facilis voluptas cupiditate temporibus quae dolorem laudantium. Cumque quisquam quis nisi error praesentium numquam.
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      This is modal 2!
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-header">
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      Wesh wesh la famille !
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+</body>
+</html>
