@@ -25,6 +25,8 @@ text { /*for the numbers inside boxes*/
   font-family: cursive;
   fill: white}
 
+p {margin-top: 12px; margin-bottom: 12px;}
+
 .square {
   cursor: pointer;
   position: absolute;
@@ -56,7 +58,7 @@ rect:hover {
   width: 500px;
   max-width: 80%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
+  text-align: justify;
   max-height: 90vh;
   overflow-y: auto; /* adds a scrollbar */
 }
@@ -96,6 +98,9 @@ rect:hover {
   margin-top: -1em;
   margin-bottom: 2vh;
 }
+
+.modal#too-soon {text-align: center;}
+
 .modal::-webkit-scrollbar {
   width: 10px;
 }
@@ -131,7 +136,34 @@ rect:hover {
   position: relative;
 }
 
-/* Need to add some media queries */
+a {
+  display: grid;
+  text-decoration: none;
+  margin-top: 16px;
+  --hl: 0;
+  --t: .3s
+}
+article {
+  grid-area: 1/ 1;
+  font-size: 4em;
+}
+.grey {
+  opacity: .4;
+  filter: grayscale(1) brightness(1.5) invert(0%)    
+}
+.base {
+  filter: 
+    sepia(1) 
+    hue-rotate(calc(var(--hue) - 50deg)) 
+    saturate(3);
+  transform: 
+    translate(calc(var(--hl)*.375em), calc(var(--hl)*-.25em)) 
+    rotate(calc(var(--hl)*22.5deg));
+  opacity: var(--hl);
+  transition: transform var(--t), opacity var(--t);
+}
+a:hover, a:focus { --hl: 1; }
+
 #img2 {
   display: none;
 }
