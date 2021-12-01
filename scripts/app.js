@@ -68,7 +68,7 @@ function renderBoxes() {
       if (counter > dd) {
         container.append("svg:image")
           .attr("xlink:href", "img/lock.svg")
-          .attr('opacity', 0.3)
+          .attr('opacity', 0.4)
           .attr('class', 'lock')
           .attr("x", "15%")
           .attr("y", "5%")
