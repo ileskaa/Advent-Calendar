@@ -59,7 +59,7 @@ addPara(modal3, node, italicNode, node2, italic("Oldboy"),
   textNode(` (2003) ! Celui-ci est basé sur un manga du même nom et raconte l'histoire d'un homme qui
   se fait un jour capturer et enfermer sans en connaître la raison. Il passera ainsi 15 ans dans une petite chambre transformée en cellule,
   sans jamais connaître l'identité de ses persécuteurs. Lorsqu'il regagne enfin sa liberté, il n'a qu'une idée en tête : trouver le responsable
-  et connaître la raison de son supplice.`)
+  afin de découvrir la raison de son supplice et d'effectuer sa vengeance.`)
 )
 
 addPara(modal3, textNode(`Il s'agit d'un film sombre, tordu et tout bonnement excellent. Sans hésitation l'un de mes films favoris. Il a remporté
@@ -138,3 +138,26 @@ lineBreaks(modal5, 2)
 var img = loadImage('https://podcast-notes-uploads.imgix.net/2021/01/Huberman-Lab-Podcast-Thumbnail-2000x2000-1.jpg?auto=compress%2Cformat&fit=scale&h=1024&ixlib=php-3.3.0&w=1024&wpsize=large')
 img.width = '400'
 modal5.appendChild(img)
+
+//MODAL 6
+addPara(modal6, textNode("L'image du jour :"))
+
+lineBreaks(modal6, 2)
+
+modal6.appendChild(loadImage("https://api.time.com/wp-content/uploads/2020/12/daniel-pullen-top-100-photos-2020.jpg?w=1000&quality=85"))
+
+lineBreaks(modal6, 2)
+
+addPara(modal6, textNode(`Cette photo assez surréaliste a été prise en septembre 2020 en Caroline du Nord lorsque
+  l’ouragan Teddy tourbillonnait à proximité des côtes, causant des vagues bien plus hautes que de coutume et
+  inondant ainsi les maisons situées à basse altitude.`))
+
+addPara(modal6, textNode("Pour afficher l'image en plein écran :"))
+
+var a = document.createElement('a')
+a.href = "https://api.time.com/wp-content/uploads/2020/12/daniel-pullen-top-100-photos-2020.jpg?w=1000&quality=85", a.target = "_blank"
+var img = loadImage('img/image-icon.svg')
+img.width = '70'
+img.id = 'imgIcon'
+a.appendChild(img)
+modal6.appendChild(a)
