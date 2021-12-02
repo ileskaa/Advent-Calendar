@@ -45,10 +45,10 @@ function loadImage(url) {
   return img
 }
 
-//MODAL 3
 const modal3 = document.querySelector('#modal3 .modal-body'), modal4 = document.querySelector('#modal4 .modal-body'),
   modal5 = document.querySelector('#modal5 .modal-body'), modal6 = document.querySelector('#modal6 .modal-body')
 
+//MODAL 3
 var node = textNode("Et c'est parti pour le jour 3 !")
 addPara(modal3, node)
 
@@ -148,7 +148,7 @@ modal6.appendChild(loadImage("https://api.time.com/wp-content/uploads/2020/12/da
 
 lineBreaks(modal6, 2)
 
-addPara(modal6, textNode(`Cette photo assez surréaliste a été prise en septembre 2020 en Caroline du Nord lorsque
+addPara(modal6, textNode(`Cette photo assez incroyable avec son côté surréaliste a été prise en septembre 2020 en Caroline du Nord lorsque
   l’ouragan Teddy tourbillonnait à proximité des côtes, causant des vagues bien plus hautes que de coutume et
   inondant ainsi les maisons situées à basse altitude.`))
 
