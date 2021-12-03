@@ -123,7 +123,7 @@ addPara(modal5, textNode(`Il n'est guère nécessaire d'avoir des connaissance p
   sait certainement se montrer pédagogue (ça change de certains, me direz-vous).`))
 
 addPara(modal5, textNode(`Je vous ai mis ci-dessous le lien YouTube vers le premier épisode, mais c'est
-  également accessible via Apple Podcasts et Spotify.`))
+  également accessible via Apple et Google Podcasts, ainsi que sur Spotify.`))
 
 var a = document.createElement('a')
 a.href = "https://www.youtube.com/watch?v=H-XfCl-HpRM", a.target = "_blank"
