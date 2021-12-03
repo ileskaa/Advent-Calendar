@@ -1,0 +1,94 @@
+:root {--margin: 15px; --border-radius: 10px}
+
+*, *::before, *::after {
+  font-family: 'Cormorant Garamond', serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--margin) 4vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+  background-color: snow;
+  font-size: 1.1rem;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  align-items:flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+h1 {
+  margin: 5px 15px;
+  text-align: center;
+}
+#chief {
+  height: 4em;
+  text-align: center;
+
+}
+
+/* Images */
+#rolls { /* for the image */
+  grid-column: 1/3;
+  justify-self: center;
+  width: 80vw;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+img {
+  border-radius: var(--border-radius);
+}
+#ugly-roll {
+  text-align: center;
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+h2 {
+  text-shadow: 1px 1px 1px grey;
+}
+#ingredients {
+  grid-column-start: 1;
+  grid-row: 3/4;
+  padding: 0 10px;
+  background-color: hsla(200, 100%, 50%, .07);
+  border-radius: var(--border-radius);
+}
+#instructions {
+  grid-column-start: 2;
+  grid-row: 3/5;
+}
+h3 {margin-bottom: 10px;}
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+li {
+  margin-bottom: 8px;
+}
+#raw-roll {max-width: 100%; margin-top: 10px;}
+
+
+@media (max-width: 767px) {
+  #ingredients {
+    grid-column: 1/3;
+    grid-row-start: 3;
+  }
+
+  #instructions {
+    grid-column: 1/3;
+    grid-row-start: 4;
+  }
+  #ingredients, #instructions {width: 100%};
+}
