@@ -59,7 +59,7 @@ addPara(modal3, node, italicNode, node2, italic("Oldboy"),
   textNode(` (2003) ! Celui-ci est basé sur un manga du même nom et raconte l'histoire d'un homme qui
   se fait un jour capturer et enfermer sans en connaître la raison. Il passera ainsi 15 ans dans une petite chambre transformée en cellule,
   sans jamais connaître l'identité de ses persécuteurs. Lorsqu'il regagne enfin sa liberté, il n'a qu'une idée en tête : trouver le responsable
-  afin de découvrir la raison de son supplice et se venger.`)
+  pour connaître la raison de son supplice et assouvir sa vengeance.`)
 )
 
 addPara(modal3, textNode(`Il s'agit d'un film sombre, tordu et tout bonnement excellent. Sans hésitation l'un de mes films favoris. Il a remporté
