@@ -111,10 +111,10 @@ addPara(modal5, textNode("J'espère que vous n'avez pas lu ce qui est écrit ci-
 addPara(modal5, textNode(`Cela étant dit, c'est parti pour le jour 5 !`))
 
 addPara(modal5, textNode(`Aujourd'hui je vais vous parler d'un podcast que j'apprécie énormément. Celui-ci est
-  réalisé par Andrew Huberman, prof de neurobiologie et d'ophtalmologie à l'université de Stanford, et il s'intitule
+  réalisé par Andrew Huberman, prof de neurobiologie et d'ophtalmologie à l'université de Stanford, et s'intitule
   tout simplement `), italic('Huberman Lab Podcast.'), textNode(` C'est un moyen pour Huberman de partager un tas
   d'informations liées à la biologie et la santé humaine. Les sujets sont variés et traitent entre autres du sommeil,
-  de la vision, des hormones et de la performance sportive. Et en bonus vous pourrez peut-être entendre son chien
+  de la vision, des hormones et de performance sportive. En bonus, vous pourrez peut-être entendre son chien
   Costello ronfler en arrière plan.`)
 )
 
@@ -148,7 +148,7 @@ modal6.appendChild(loadImage("https://api.time.com/wp-content/uploads/2020/12/da
 
 lineBreaks(modal6, 2)
 
-addPara(modal6, textNode(`Cette photo assez incroyable avec son côté surréaliste a été prise en septembre 2020 en Caroline du Nord lorsque
+addPara(modal6, textNode(`Cette photo assez incroyable avec son côté surréaliste a été prise en septembre 2020, en Caroline du Nord, lorsque
   l’ouragan Teddy tourbillonnait à proximité des côtes, causant des vagues bien plus hautes que de coutume et
   inondant ainsi les maisons situées à basse altitude.`))
 
