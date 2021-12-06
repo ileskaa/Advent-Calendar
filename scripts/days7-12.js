@@ -52,7 +52,7 @@ addPara(modals[7], p)
 //MODAL 8
 addPara(modals[8], textNode(`Allez, ça part sur le deuxième morceau de ce calendrier.`))
 
-addPara(modals[8], textNode(`Il s'agit d'un titre absolument dément chanté par un artiste britannique. Ce personnage faisait déjà danser nos parents, et il fera dancer les générations futures pour longtemps encore. Après tout il a une voix incroyable et son talent en tant que chanteur n'a réellement d'égal que ses qualités de danseur. Pour ce qui est des paroles, elles sont d'une profondeur qui, je dois l'avouer, m'ont touché au plus profond de mon âme. Tout cela explique le succès fou qu'il a eu dans les années 80 et 90.`))
+addPara(modals[8], textNode(`Il s'agit d'un titre absolument dément chanté par un artiste britannique. Ce personnage faisait déjà danser nos parents, et il fera dancer les générations futures pour longtemps encore. Après tout il a une voix incroyable et son talent de chanteur n'a d'égal que ses qualités de danseur. Pour ce qui est des paroles, elles sont d'une profondeur qui, je dois l'avouer, m'ont touché au plus profond de mon âme. Tout cela explique le succès fou qu'il a eu dans les années 80 et 90.`))
 
 addPara(modals[8], textNode(`Pour écouter le morceau, vous n'avez qu'à... Bref, vous commencez à savoir comment ça marche.`))
 
@@ -76,7 +76,7 @@ modals[8].appendChild(para)
 var nobr = document.createElement('nobr')
 var txt = document.createTextNode("(うまい")
 nobr.appendChild(txt)
-addPara(modals[8], textNode(`Bon maintenant que j'ai rempli mon obligation morale, je vais réellement pouvoir vous partager le titre du jour. Celui-ci est interprété par un groupe canado-japonais du nom de MONKEY MAJIK. Le morceau étant lui-même en japonais, je ne comprends strictement rien aux paroles, si ce n'est `), italic('zero-calorie'), textNode(' et '), italic("umarvelous"), textNode(`. Ce dernier est un mot-valise composé du terme japonais `), italic('umai '), nobr, textNode(` en hiragana), employé notamment pour dire qu'un plat est délicieux, et du mot anglais `), italic('marvelous'), textNode(`. Ce morceau parle donc d'une nourriture dont le goût n'aurait rien à envier à celui de l'ambroisie que consommaient les dieux de l'Olympe, et qui serait dénuée de la moindre calorie. Pour ce qui est du restant des paroles, je suis dans le flou le plus total. Julie, si tu lis ces lignes, aides-moi à comprendre ce qu'elles signifient !!`)
+addPara(modals[8], textNode(`Bon maintenant que j'ai rempli mon obligation morale, je vais réellement pouvoir vous partager le titre du jour. Celui-ci est interprété par un groupe canado-japonais du nom de MONKEY MAJIK. Le morceau étant lui-même en japonais, je ne comprends strictement rien aux paroles, si ce n'est `), italic('zero-calorie'), textNode(' et '), italic("umarvelous"), textNode(`. Ce dernier est un mot-valise composé du terme japonais `), italic('umai '), nobr, textNode(`), employé notamment pour dire qu'un plat est délicieux, et du mot anglais `), italic('marvelous'), textNode(`. Ce morceau parle donc d'une nourriture dont le goût n'aurait rien à envier à celui de l'ambroisie que consommaient les dieux de l'Olympe, et qui serait dénuée de la moindre calorie. Pour ce qui est du restant des paroles, je suis dans le flou le plus total. Julie, si tu lis ces lignes, aides-moi à comprendre ce qu'elles signifient !!`)
 )
 
 addPara(modals[8], textNode('Le titre date de 2018, mais le clip a un style retro dont je suis fan. Je vous laisse aussi apprécier la magnifique chorégraphie qui va avec.'))
