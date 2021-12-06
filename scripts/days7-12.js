@@ -87,7 +87,7 @@ musicLink(modals[8], "https://www.youtube.com/watch?v=XWo627F7CeU", 210)
 //MODAL 9
 addPara(modals[9], textNode('Pour ce jour, une petite anecdote.'))
 
-addPara(modals[9], textNode(`Vous connaissaez sans doute tous la Belladone, cette plante tristement célèbre car déjà les romains s'en servaient pour empoisonner leurs ennemis. Certains ont également spéculé que ce serait une concoction préparée à partir de cette plante que Juliette avale à la fin de la tragédie de Shakespeare. Mais savez-vous d'où vient le nom de cette solanacée ? Le nom latinisé que Carl von Linné lui a attribué est `), italic('Atropa belladonna.'), textNode(` Le premier de ces termes est une référence à Atropos, l'une de ces trois déesses de la destinée appelées Moires dans la mythologie grecque. Lorsqu'il est temps pour une personne de mourir, Atropos coupe le fil de la vie qui avait été tissé et mesuré par ses sœurs. Ainsi si von Linné a choisi de donner à ce genre le nom d'`), italic('Atropa'), textNode(", c'est en référence à la mort et donc aux propriétés toxiques qui caractérisent cette famille de plantes.")
+addPara(modals[9], textNode(`Vous connaissaez sans doute tous la Belladone, cette plante tristement célèbre car déjà les romains s'en servaient pour empoisonner leurs ennemis. Certains ont également spéculé que ce serait une concoction préparée à partir de cette herbacée que Juliette avale à la fin de la tragédie de Shakespeare. Mais savez-vous d'où vient le nom de cette solanacée ? Le nom latinisé que Carl von Linné lui a attribué est `), italic('Atropa belladonna.'), textNode(` Le premier de ces termes est une référence à Atropos, l'une de ces trois déesses de la destinée appelées Moires dans la mythologie grecque. Lorsqu'il est temps pour une personne de mourir, Atropos coupe le fil de la vie qui avait été tissé et mesuré par ses sœurs. Ainsi, si von Linné a choisi de donner à ce genre le nom d'`), italic('Atropa'), textNode(", c'est en référence à la mort et donc aux propriétés toxiques qui caractérisent cette famille de plantes.")
 )
 
 lineBreaks(modals[9], 1)
@@ -114,10 +114,15 @@ modals[9].appendChild(span)
 
 lineBreaks(modals[9], 2)
 
-addPara(modals[9], textNode(`Le mot `), italic('Atropa'), textNode(" fait donc tout à fait sens. Mais qu'en est-il du deuxième terme ?")
+addPara(modals[9], textNode(`Le mot `), italic('Atropa'), textNode(" fait donc tout à fait sens. Mais qu'en est-il du terme "), italic("belladonna"), textNode(" ? Car après tout c'est de là que vient le nom vernaculaire de cette plante. Il s'agit cette fois d'une référence à l'italien, "), italic('bella donna'), textNode(" signifiant « belle femme ». Mais pourquoi donc avoir donné un nom pareil à une plante vénéneuse ? Pour le comprendre, il nous faut remonter à la renaissance pour découvrir une drôle de pratique vénitienne. A l'époque, la belladone y était utilisée pour fabriquer des gouttes pour les yeux que les femmes s'appliquaient pour dilater leurs pupilles, cette caractéristique étant alors apparemment considérée comme très attractive. Personnellement, je pense que j'aurais trouvé ça plus flippant qu'autre chose...")
 )
 
-addPara(modals[9], textNode('Cette anecdote sort certes de nul part, mais je trouve ça intriguant de voir les curieuses histoires qui se cachent derrière certains noms.'))
+addPara(modals[9], textNode('Cette anecdote sort certes de nul part, mais je trouve ça intriguant de voir les curieuses histoires qui se cachent parfois derrière le nom des choses.'))
+
+lineBreaks(modals[9], 2)
+
+var img = loadImage("https://ars.els-cdn.com/content/image/3-s2.0-B9780128153208000168-f16-14-9780128153208.jpg")
+modals[9].appendChild(img)
 
 addPara(modals[10], textNode(`Usual Suspects (1995)`))
 
