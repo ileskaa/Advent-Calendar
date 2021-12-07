@@ -170,8 +170,35 @@ a:hover, a:focus { --hl: 1; }
   transition: 1s;
 }
 
+#imgIcon:hover {
+  filter: saturate(2);
+}
 
 img {max-width: 100%;}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#miam {
+  font-size: 4rem;
+  animation: rotation 3s infinite linear;
+}
+
+.threeFates {
+  font-size: .8em;
+  margin-top: 5px;
+  text-align: center;
+}
+.grinningFace {
+  font-size: 1rem;
+  vertical-align: middle;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 768px), (max-width: 1024px) and (min-height: 1300px) { /* the latter condition concerns the iPad pro */
