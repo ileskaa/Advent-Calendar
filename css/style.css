@@ -1,3 +1,7 @@
+:root {
+  --waveDeg: 40deg;
+}
+
 .header { /*refers to the header class*/
   display: inline-block;}
 
@@ -198,6 +202,27 @@ img {max-width: 100%;}
 .grinningFace {
   font-size: 1rem;
   vertical-align: middle;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(calc( -1 * var(--waveDeg) ));
+    transform-origin: bottom;
+  }
+  50% {
+    transform: rotate(var(--waveDeg));
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotate(calc( -1 * var(--waveDeg) ));
+    transform-origin: bottom;
+  }
+}
+
+#hand {
+  font-size: 8rem;
+  animation: waving 2s infinite linear;
+  margin: 10rem 0;
 }
 
 /* MEDIA QUERIES */
