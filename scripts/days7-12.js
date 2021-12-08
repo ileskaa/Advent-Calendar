@@ -87,7 +87,7 @@ musicLink(modals[8], "https://www.youtube.com/watch?v=XWo627F7CeU", 210)
 //MODAL 9
 addPara(modals[9], textNode('Pour ce jour, une petite anecdote.'))
 
-addPara(modals[9], textNode(`Vous connaissaez sans doute tous la Belladone, cette plante tristement célèbre car déjà les romains s'en servaient pour empoisonner leurs ennemis. Certains ont également spéculé que ce serait une concoction préparée à partir de cette herbacée que Juliette avale à la fin de la tragédie de Shakespeare. Mais savez-vous d'où vient le nom de cette solanacée ? Le nom latinisé que Carl von Linné lui a attribué est `), italic('Atropa belladonna.'), textNode(` Le premier de ces termes est une référence à Atropos, l'une de ces trois déesses de la destinée appelées Moires dans la mythologie grecque. Lorsqu'il est temps pour une personne de mourir, Atropos coupe le fil de la vie qui avait été tissé et mesuré par ses sœurs. Ainsi, si von Linné a choisi de donner à ce genre le nom d'`), italic('Atropa'), textNode(", c'est en référence à la mort et donc aux propriétés toxiques qui caractérisent cette famille de plantes.")
+addPara(modals[9], textNode(`Vous connaissaez sans doute tous la Belladone, cette plante tristement célèbre car déjà les romains s'en servaient pour empoisonner leurs ennemis. Certains ont également spéculé que ce serait une concoction préparée à partir de cette herbacée que Juliette avale à la fin de la tragédie de Shakespeare. Mais savez-vous d'où vient le nom de cette solanacée ? Le nom latinisé que Carl von Linné lui a attribué est `), italic('Atropa belladonna.'), textNode(` Le premier de ces termes est une référence à Atropos, l'une de ces trois déesses de la destinée de la mythologie grecque appelées Moires. Lorsqu'il est temps pour une personne de mourir, Atropos coupe le fil de la vie qui avait été tissé et mesuré par ses sœurs. Ainsi, si von Linné a choisi de donner à ce genre le nom d'`), italic('Atropa'), textNode(", c'est en référence à la mort et donc aux propriétés toxiques qui caractérisent cette famille de plantes.")
 )
 
 lineBreaks(modals[9], 1)
@@ -114,17 +114,45 @@ modals[9].appendChild(span)
 
 lineBreaks(modals[9], 2)
 
-addPara(modals[9], textNode(`Le mot `), italic('Atropa'), textNode(" fait donc tout à fait sens. Mais qu'en est-il du terme "), italic("belladonna"), textNode(" ? Car après tout c'est de là que vient le nom vernaculaire de cette plante. Il s'agit cette fois d'une référence à l'italien, "), italic('bella donna'), textNode(" signifiant « belle femme ». Mais pourquoi donc avoir donné un nom pareil à une plante vénéneuse ? Pour le comprendre, il nous faut remonter à la renaissance pour découvrir une drôle de pratique vénitienne. A l'époque, la belladone y était utilisée pour fabriquer des gouttes pour les yeux que les femmes s'appliquaient pour dilater leurs pupilles, cette caractéristique étant alors apparemment considérée comme très attractive. Personnellement, je pense que j'aurais trouvé ça plus flippant qu'autre chose...")
+addPara(modals[9], textNode(`Le mot `), italic('Atropa'), textNode(" fait donc tout à fait sens. Mais qu'en est-il du terme "), italic("belladonna"), textNode(" ? Car après tout c'est de là que vient le nom vernaculaire de cette plante. Il s'agit cette fois d'une référence à l'italien, "), italic('bella donna'), textNode(" signifiant « belle femme ». Mais pourquoi donc avoir donné un nom pareil à une plante vénéneuse ? Pour le comprendre, il nous faut remonter à la renaissance pour découvrir une drôle de pratique vénitienne. A l'époque, la belladone y était utilisée pour fabriquer des gouttes pour les yeux que les femmes s'appliquaient pour dilater leurs pupilles, cette caractéristique étant alors apparemment considérée comme très attractive. Personnellement, je pense que ça m'aurais plus fait flipper qu'autre chose...")
 )
 
-addPara(modals[9], textNode('Cette anecdote sort certes de nul part, mais je trouve ça intriguant de voir les curieuses histoires qui se cachent parfois derrière le nom des choses.'))
+addPara(modals[9], textNode('Anecdote sortant certes de nul part, mais je trouve ça intriguant de voir les curieuses histoires qui se cachent parfois derrière le nom des choses.'))
 
 lineBreaks(modals[9], 2)
 
 var img = loadImage("https://ars.els-cdn.com/content/image/3-s2.0-B9780128153208000168-f16-14-9780128153208.jpg")
 modals[9].appendChild(img)
 
-addPara(modals[10], textNode(`Usual Suspects (1995)`))
+
+var hand = document.createElement('section')
+hand.id = "hand"
+hand.appendChild(textNode('✋'))
+modals[10].appendChild(hand)
+
+addPara(modals[10], textNode("Aujourd'hui je vous suggère un fier représentant d'une glorieuse série de films. Paru assez récemment, celui-ci a su épater les spectateurs par la qualité de sa trame narrative. Ainsi je vous recommande chaudement le grand, le magnifique, l’inoubliable…"))
+
+lineBreaks(modals[10], 7)
+
+var img = loadImage('https://lumiere-a.akamaihd.net/v1/images/star-wars-the-rise-of-skywalker-theatrical-poster-1000_ebc74357.jpeg?region=0%2C0%2C891%2C1372')
+modals[10].appendChild(img)
+
+lineBreaks(modals[10], 4)
+
+addPara(modals[10], textNode("Non non je plaisante, n’allez pas encore recruter un tueur à gages…"))
+
+addPara(modals[10], textNode("Oubliez le bide monumental mentionné ci-dessus, et regardez plutôt ceci :"))
+
+lineBreaks(modals[10], 2)
+
+var img = loadImage('https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg')
+modals[10].appendChild(img)
+
+lineBreaks(modals[10], 2)
+
+addPara(modals[10], italic('The Usual Suspects'), textNode(` (1995) est un film réalisé par Bryan Singer qui raconte l'histoire de cinq criminels qui se font contacter par un mystérieux Mr Kobayashi afin de mener un raid sur le navire d'un groupe de narcotrafiquants argentins et d'en détruire la cargaison. Ils vont toutefois s'apercevoir qu'il est question de bien autre chose que de drogue...`))
+
+addPara(modals[10], textNode("Foncez si vous ne l'avez pas déjà vu car c'est franchement de la bombe."))
 
 addPara(modals[11], textNode(``))
 

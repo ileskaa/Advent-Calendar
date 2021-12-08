@@ -41,7 +41,6 @@ function loadImage(url) {
   let img = new Image(); // width, height values are optional params 
   img.src = url;
   img.loading = "lazy";
-  img.SameSite = "Lax";
   return img
 }
 
