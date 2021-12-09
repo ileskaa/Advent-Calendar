@@ -69,11 +69,12 @@ rect:hover {
 }
 
 .modal-header {
-  padding-bottom: 1.5em;
   display: flex;
-  justify-content:flex-end; /* this is for the main axis, which in our case is horizontal, while align items is for the cross items */
+  justify-content:space-between; /* this is for the main axis, which in our case is horizontal, while align items is for the cross items */
   align-items: center;
+  height: 2rem;
 }
+.modal-header:not(.too-soon) {border-bottom: 1px solid gray;}
 
 .modal-header .close-button {
   cursor: pointer;
@@ -83,13 +84,16 @@ rect:hover {
   font-size: 1.25rem;
   font-weight: bold;
 }
+.title {
+  margin-left: 1rem;
+  font-weight: 600;
+}
 
 .modal-body {
   padding: 10px 15px 30px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -1em;
   margin-bottom: 0vh;
   max-height: 80vh; /* necessary for the scrollbar */
   overflow-y: auto; /* adds a scrollbar */
@@ -221,7 +225,7 @@ img {max-width: 100%;}
 
 #hand {
   font-size: 8rem;
-  animation: waving 2s infinite linear;
+  animation: waving 2s infinite ease-in-out;
   margin: 10rem 0;
 }
 
