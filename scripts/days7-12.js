@@ -1,3 +1,22 @@
+var months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+var today = new Date()
+var mm = today.getMonth() //January is 0!
+
+myModals = document.getElementsByClassName('modal')
+let day = 1
+for (modal of myModals) {
+  if (modal.id !== "too-soon") {
+    let header = modal.getElementsByClassName('modal-header')[0]
+    let title = document.createElement('div')
+    title.className = "title"
+    title.appendChild(textNode(day + " " + months[mm]))
+    day += 1
+    let close = header.getElementsByClassName('close-button')[0]
+    header.insertBefore(title, close)
+    console.log(modal.id)
+  }
+};
+
 //let's create an array that will allow us to target the bodies of our modal
 const modals = []
 for (let i=7; i<25; i++) { //elements 0-6 of our array will be empty since we start at i=7
