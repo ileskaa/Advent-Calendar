@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="5400">
+  <meta http-equiv="refresh" content="7200">
   <link rel="stylesheet" href="css/normalize_v8.0.1.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/winter-hat.svg">
-  <script src="https://d3js.org/d3.v6.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  
   <script src="scripts/days3-6.js" defer></script>
   <script src="scripts/days7-12.js" defer></script>
   <script src="scripts/app.js" defer></script>
@@ -29,7 +30,7 @@
   </div>
 
   <div class="modal" id="too-soon">
-    <div class="modal-header">
+    <div class="modal-header too-soon">
       <div class="title"></div>
       <button data-close-button class="close-button">&times;</button> <!-- we have both a data attribute and a class attribute -->
     </div>
