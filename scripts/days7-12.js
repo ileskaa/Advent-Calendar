@@ -173,7 +173,19 @@ addPara(modals[10], italic('The Usual Suspects'), textNode(` (1995) est un film 
 
 addPara(modals[10], textNode("Foncez si vous ne l'avez pas déjà vu car c'est franchement de la bombe."))
 
-addPara(modals[11], textNode(``))
+addPara(modals[11], textNode(`Hey hey hey!`))
+
+addPara(modals[11], textNode(`Pour ce onzième jour, une nouvelle musique à découvrir. Il a été composé par un artiste de prog rock polonais qui porte la double casquette de bassiste et chanteur du groupe Riverside.`))
+
+addPara(modals[11], textNode(`C'est toutefois de la carrière solo de l'artiste que le morceau est issu, et plus précisément de son sixième album, `), italic('Under the Fragmented Sky'), textNode(", paru en 2018. A l'origine, cet album était censé sortir sous la forme d'un seul et unique single, qui aurait été long de plusieurs dizaines de minutes, mais Mariusz Duda (le vrai nom de l'artiste) a finalement décidé que ces morceaux méritaient d'avoir leur identité propre.")
+)
+
+lineBreaks(modals[11], 2)
+
+var img = loadImage('https://kscopemusic.com/wp-content/uploads/2020/09/SESJA_LS_FOREST12-of-13-scaled.jpg')
+modals[11].appendChild(img)
+
+musicLink(modals[11], "https://www.youtube.com/watch?v=PwQqCEAGr6U", 120)
 
 addPara(modals[11], textNode(``))
 
