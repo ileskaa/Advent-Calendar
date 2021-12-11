@@ -2,6 +2,7 @@ var months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 
 var today = new Date()
 var mm = today.getMonth() //January is 0!
 
+//Let's add headers to our modals
 myModals = document.getElementsByClassName('modal')
 let day = 1
 for (modal of myModals) {
@@ -41,6 +42,17 @@ function musicLink(modal, href, hue, onclick) {
   a.appendChild(article)
 
   modal.appendChild(a)
+}
+
+function createElt(element, txt, id, modal) {
+  let elt = document.createElement(element)
+  elt.appendChild(textNode(txt))
+  elt.id = id
+  if (modal === undefined) {
+    return elt
+  } else {
+    modal.appendChild(elt)
+  }
 }
 
 addPara(modals[7], textNode(`Aujourd'hui je vous propose la recette d'une pâtisserie fort appréciée en Finlande et dans les pays scandinaves. Pour découvrir ça, suivez le lien :`))
@@ -187,6 +199,7 @@ modals[11].appendChild(img)
 
 musicLink(modals[11], "https://www.youtube.com/watch?v=PwQqCEAGr6U", 120)
 
-addPara(modals[11], textNode(``))
-
-addPara(modals[12], textNode(`Ça y on arrive déjà à la moitié ! Pour aujourd'hui je vous ai préparé un petit quizz sur le thème du cinéma.`))
+addPara(modals[12], textNode("Le mème du jour :"))
+lineBreaks(modals[12], 2)
+var img = loadImage('img/IAmTheTable.jpg')
+modals[12].appendChild(img)
