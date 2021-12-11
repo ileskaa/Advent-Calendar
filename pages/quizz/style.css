@@ -2,9 +2,14 @@
 
 * {box-sizing: border-box;}
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  height: var(--vh100, 100vh); /* the 2nd param is a fallback value in case the first is not the defined */
-  width: 100vw;
+  height: 100%; /* the 2nd param is a fallback value in case the first is not the defined */
+  width: 100%;
   background-color: cornflowerblue;
   display: flex;
 }
