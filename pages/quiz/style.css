@@ -107,5 +107,5 @@ body {
 }
 
 .correct {background-color: green;}
-.wrong {background-color: red;}
+.wrong {background-color: #D50000;}
 .correct, .wrong {pointer-events: none;}
