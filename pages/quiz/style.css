@@ -1,0 +1,111 @@
+* {box-sizing: border-box;}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%; /* the 2nd param is a fallback value in case the first is not the defined */
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+.bgCorrect {background-color: darkgreen;}
+.bgWrong {background-color: darkred;}
+
+#score {
+  height: auto;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  margin-top: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#finished {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  margin: auto;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.container {
+  margin: auto;
+  background-color: snow;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  /* wihth min() it is always the smallest of the two that will be used. If 90% max-width would result in a smaller
+  container than with the value set to 800px, 90% will be used. Therefore, on small screens 90% will be the
+  reference, whereas it will be 800px on large screens */
+  max-width: min(800px, 90%);
+  box-shadow: 4px 4px 4px darkslategray; /* x- and y-offsets, blur-radius, color */
+}
+
+#question {
+  padding: 1rem;
+  text-align: center;
+  font-weight:600;
+}
+
+#answers, #commands {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+#answers {
+  width: 90vw;
+  max-width: 100%;
+  height: 50vh;
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkviolet;
+  color: white;
+}
+.focusable:hover, .focusable:focus {
+  background-color: indigo;
+  cursor: pointer;
+}
+.button.answer {
+  width: 45%;
+  height: 45%;
+  text-align: center;
+  padding: 2px;
+  hyphens: auto;
+}
+#start, #next {
+  margin: 1rem;
+}
+#start {
+  width: 9rem;
+  height: 6rem;
+}
+#next {
+  width: 8rem;
+  height: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.correct {background-color: green;}
+.wrong {background-color: red;}
+.correct, .wrong {pointer-events: none;}
