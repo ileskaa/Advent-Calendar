@@ -229,6 +229,10 @@ img {max-width: 100%;}
   margin: 10rem 0;
 }
 
+#dove {font-size: 3rem;}
+
+.link {font-size: 4rem;}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px), (max-width: 1024px) and (min-height: 1300px) { /* the latter condition concerns the iPad pro */
   #img1 {
