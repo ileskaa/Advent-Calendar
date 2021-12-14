@@ -33,4 +33,14 @@ addPara(modals[14], textNode("Pour afficher l'image en plein écran :"))
 
 imageLink(modals[14], "https://api.time.com/wp-content/uploads/2021/11/erin-schaff-national-guard-top-100-photos-2021-1.jpg?w=1200&quality=85")
 
-addPara(modals[15], textNode("Maintenant, un tableau réalisé par le français Alexandre-Gabriel Decamps dans les années 1830. L'académie des Beaux-Arts ayant rejeté plusieurs de ses travaux car jugés trop expérimentaux, Decamps répondit en realisant ce tableau. On y voit plusieurs critiques d'art en train de sur-interpréter le genre de paysage baroque dont notre artiste était lassé. En somme, une belle singerie."))
+addPara(modals[15], textNode("Maintenant, une peinture réalisé par le français Alexandre-Gabriel Decamps dans les années 1830. L'Académie des Beaux-Arts ayant rejeté plusieurs de ses travaux car jugés trop expérimentaux, Decamps realisa ce tableau qui montre toute l'affection qu'il avait pour l'Académie. On y voit plusieurs critiques d'art en train de sur-interpréter le genre de paysage baroque dont notre artiste était lassé. En somme, une belle singerie."))
+
+lineBreaks(modals[15], 1)
+
+var img = loadImage("https://collectionapi.metmuseum.org/api/collection/v1/iiif/436114/799864/main-image")
+modals[15].appendChild(img)
+modals[15].appendChild(italic('Les Experts – Alexandre-Gabriel Decamps'))
+
+lineBreaks(modals[15], 1)
+addPara(modals[15], textNode("Et comme toujours, pour le plein écran :"))
+imageLink(modals[15], "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436114/799864/main-image")
