@@ -44,3 +44,22 @@ modals[15].appendChild(italic('Les Experts – Alexandre-Gabriel Decamps'))
 lineBreaks(modals[15], 1)
 addPara(modals[15], textNode("Et comme toujours, pour le plein écran :"))
 imageLink(modals[15], "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436114/799864/main-image")
+
+
+addPara(modals[16], textNode("Nouveau jour, nouveau morceau."))
+
+addPara(modals[16], textNode("Aujourd'hui à l'honneur un groupe originaire de Brooklyn (NYC). Le morceau que vous allez écouter est tiré de leur album "), italic("Sound of Silver"), textNode(". Au sujet du titre de l'album, James Murphy, le fondateur du groupe, a expliqué que c'était une référence à la médaille d'argent, et plus précisément à son père qui avait pour habitude de dire qu'avoir un enfant est une médaille d'argent permanente car rien ne pourra égaler la naissance du petit être, et tout ce qu'un parent pourra faire jusqu'à la fin de ses jours arrivera donc au mieux en deuxième place. Murphy a aussi évoqué le fait que "), italic("Sound of Silver"), textNode(" est paru en tant que second album du groupe, donc encore une référence à cette notion de deuxième position."))
+
+addPara(modals[16], textNode("Quant au morceau en question, il parle de la perte d'un être cher. Ça vaut le coup de payer attention aux paroles car Murphy, qui en est l'auteur, a cette capacité de transmettre son expérience de la douleur en employant des images banales du quotidien. Voici un extrait des lyrics :"))
+
+var section = createElt('blockquote', '')
+section.innerHTML = `
+  <i>
+    The worst is all the lovely weather<br>
+    I'm stunned, it's not raining<br>
+    The coffee isn't even bitter<br>
+    Because, what's the difference?<br>
+  </i>`
+modals[16].appendChild(section)
+
+musicLink(modals[16], "https://www.youtube.com/watch?v=sZDKP5pnhhM", 280)
