@@ -91,5 +91,4 @@ modals[18].appendChild(p)
 
 lineBreaks(modals[18], 1)
 var img = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Billy_Wilders_grave_%28978339409%29.jpg/330px-Billy_Wilders_grave_%28978339409%29.jpg")
-//img.width = 400
 modals[18].appendChild(img)
