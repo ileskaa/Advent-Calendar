@@ -63,3 +63,33 @@ section.innerHTML = `
 modals[16].appendChild(section)
 
 musicLink(modals[16], "https://www.youtube.com/watch?v=sZDKP5pnhhM", 280)
+
+
+addPara(modals[17], textNode("Allez, on repart sur une note plus légère avec un cartoon réalisé par un certain Roy Delgado qui a passé 4 ans au sein de la marine états-unienne, a ensuite fondé un studio de création d'enseignes, puis est devenu dessinateur. Comme quoi il ne faut jamais penser d'une reconversion qu'elle est impossible."))
+
+lineBreaks(modals[17], 1)
+var img = loadImage("https://www.rd.com/wp-content/uploads/2019/08/meeting-takeaway.jpg?w=760")
+modals[17].appendChild(img)
+
+
+addPara(modals[18], textNode("Nouvelle suggestion cinématographique !"))
+
+addPara(modals[18], textNode("Il s'agit de "), italic("Witness for the Prosecution"), textNode(" (1957), un film réalisé par Billy Wilder. Ce dernier avait initialement pour projet de devenir avocat, mais il abandonna finalement cette voie pour se faire recruter en tant que journaliste par un quotidien viennois. Il emménagea ensuite à Berlin et quelque temps après se mit à écrire des scénarios de film. Sa carrière dans le monde du cinéma était lancée. Bien que Wilder délaissa ses études de droit, il a néanmoins gardé un vif intérêt pour le sujet car le procès est un thème qui revient à plusieurs reprises dans ses films. D'ailleurs, c'est justement de cela que traite le film du jour. Il s'agit d'une affaire judiciaire qui, c'est le moins que l'on puisse dire, sera pleine de rebondissements. On peut y voir un Charles Laughton qui réussi la performance de jouer le rôle d'un avocat à la fois odieux et attachant. On y voit aussi une jeune Marlene Dietrich jouant la femme de l'accusé, ce qui en soit est déjà une raison pour voir ce long-métrage. Ce film contient par ailleurs des dialogues qui sont parmis les meilleurs que j'aie pu entendre. "))
+
+addPara(modals[18], textNode("Bref, un film qui en vaut vraiment la chandelle."))
+
+lineBreaks(modals[18], 1)
+var img = loadImage("https://m.media-amazon.com/images/M/MV5BZDA4MWNkMTctZDQ0Mi00MTY2LThjYTAtNWM5OTY3NzA4MzIyXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_.jpg")
+img.width = 400
+modals[18].appendChild(img)
+
+//add image of movie and the img of Wilder's tombstone
+lineBreaks(modals[18], 2)
+var p = document.createElement('p')
+p.innerHTML = "D'ailleurs, pour l'anecdote, voici à quoi ressemble la pierre tombale du génie&nbsp;:"
+modals[18].appendChild(p)
+
+lineBreaks(modals[18], 1)
+var img = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Billy_Wilders_grave_%28978339409%29.jpg/330px-Billy_Wilders_grave_%28978339409%29.jpg")
+//img.width = 400
+modals[18].appendChild(img)
